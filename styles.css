@@ -1,0 +1,205 @@
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+  }
+
+.img-size {
+  width: 300px; /* Define a largura desejada */
+  height: 300px; /* Define a altura desejada */
+  object-fit: cover; /* Mantém a proporção e cobre a área definida */
+}
+
+/* Seção de boas-vindas */
+#welcome {
+  height: 80vh; /* Define a altura para 80% da viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo translúcido para o rodapé */
+  padding: 20px;
+  color: black; /* Cor preta para o texto do rodapé */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.carousel-item {
+  width: 100%; /* Largura máxima para ocupar todo o espaço */
+  height: 500px; /* Altura fixa para todas as imagens */
+  object-fit: cover; /* Ajusta a imagem sem distorcer */
+}
+
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .navbar {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    color: #343a40;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #5ecaa3;
+  }
+  
+  /* Header - Banner */
+  .bg-image {
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+  }
+  
+  .bg-image h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .bg-image p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .bg-image .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #5ecaa3;
+    border: none;
+    color: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bg-image .btn:hover {
+    background-color: #5ecaa3;
+  }
+  
+  /* Estilos para as páginas */
+  .container {
+    max-width: 1200px;
+  }
+  
+  /* Produtos */
+
+  .card {
+    border: none;
+    height: 100%;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribui o conteúdo igualmente */
+}
+  
+  /* Footer */
+  footer {
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  footer a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos para a página de Contato */
+  .form-control {
+    border-radius: 5px;
+    box-shadow: none;
+    border-color: #ced4da;
+  }
+  
+  .form-control:focus {
+    border-color: #5ecaa3;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .btn-primary {
+    background-color: #5ecaa3;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #5ecaa3;
+  }
+  
+  /* Estilo responsivo */
+  @media (max-width: 768px) {
+    .bg-image {
+      height: 40vh;
+    }
+  
+    .bg-image h1 {
+      font-size: 2.5rem;
+    }
+  
+    .bg-image p {
+      font-size: 1.2rem;
+    }
+  
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .navbar-nav .nav-item {
+      margin-bottom: 10px;
+    }
+  }
+  
